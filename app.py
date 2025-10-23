@@ -42,7 +42,7 @@ def carregar_usuarios():
             "admin": {
                 "email": "josaeloliveira@gmail.com",
                 "name": "Admin",
-                "password": stauth.Hasher().generate(["Jos01600"])[0],
+                "password": stauth.Hasher(["Jos01600"]).hash()[0],
                 "expiry_days": 100000000
             },
             "Iasmin": {
