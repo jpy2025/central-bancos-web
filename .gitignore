@@ -1,0 +1,5 @@
+# Ignorar arquivos grandes e temporários
+*.exe
+*.pyc
+__pycache__/
+output/
