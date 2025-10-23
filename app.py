@@ -77,8 +77,15 @@ authenticator = stauth.Authenticate(
     login_config["cookie"]["expiry_days"],
 )
 
-nome, auth_status, usuario = authenticator.login(
-    location="main", fields={"Form name": "🔐 Login da Central"})
+login_info = authenticator.login(location="main", fields={
+                                 "Form name": "🔐 Login da Central"})
+if login_info:
+    nome = login_info.get("name")
+    usuario = login_info.get("username")
+    auth_status = login_info.get("authentication_status")
+else:
+    nome = usuario = auth_status = None
+
 
 # Recriar cookie com expiração por usuário
 if auth_status and usuario in usuarios:
