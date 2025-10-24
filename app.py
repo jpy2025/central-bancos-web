@@ -84,7 +84,7 @@ st.json(usuarios)
 st.write("Tentando autenticação...")
 # === FIM DEBUG ===
 
-login_info = authenticator.login(name="🔐 Login da Central", location="main")
+login_info = authenticator.login("🔐 Login da Central", "main")
 
 if login_info:
     nome = login_info.get("name")
