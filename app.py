@@ -42,13 +42,13 @@ def carregar_usuarios():
             "admin": {
                 "email": "josaeloliveira@gmail.com",
                 "name": "Admin",
-                "password": stauth.Hasher().hash("Jos01600"),
+                "password": "$2b$12$tGstQqBJViHdCvHH5EEHfOQz6ApDNcUETv5LYNLVDNR6bwJgWk4k6",
                 "expiry_days": 100000000
             },
             "Iasmin": {
                 "email": "iasmings@gmail.com",
                 "name": "Iasmin",
-                "password": stauth.Hasher().hash("12345"),
+                "password": "$2b$12$qELZpbVWaPMDKtHj0R.u0.dNpAxfSTEtWqptFCobMFEUKTjle",
                 "expiry_days": 100000000
             }
         }
