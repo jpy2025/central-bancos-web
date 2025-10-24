@@ -84,7 +84,8 @@ st.json(usuarios)
 st.write("Tentando autenticação...")
 # === FIM DEBUG ===
 
-login_info = authenticator.login("🔐 Login da Central", location="main")
+# ✅ Compatível com versões antigas do streamlit-authenticator
+login_info = authenticator.login("🔐 Login da Central")
 
 if login_info:
     nome = login_info.get("name")
@@ -92,7 +93,6 @@ if login_info:
     auth_status = login_info.get("authentication_status")
 else:
     nome = usuario = auth_status = None
-
 
 # === DEBUG MODE ===
 st.write("Login retornado:")
