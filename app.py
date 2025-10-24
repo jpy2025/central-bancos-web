@@ -85,19 +85,16 @@ st.write("Tentando autenticação...")
 # === FIM DEBUG ===
 
 
-login_info = authenticator.login(location="main", fields={
-                                 "Form name": "🔐 Login da Central"})
+nome, auth_status, usuario = authenticator.login(
+    "🔐 Login da Central", "main"
+)
 
 # === DEBUG MODE ===
-st.write("Login info:", login_info)
+st.write("Login retornado:")
+st.write("Nome:", nome)
+st.write("Usuário:", usuario)
+st.write("Status:", auth_status)
 # === FIM DEBUG ===
-
-if login_info:
-    nome = login_info.get("name")
-    usuario = login_info.get("username")
-    auth_status = login_info.get("authentication_status")
-else:
-    nome = usuario = auth_status = None
 
 
 # Recriar cookie com expiração por usuário
