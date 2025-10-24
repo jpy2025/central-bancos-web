@@ -42,13 +42,13 @@ def carregar_usuarios():
             "admin": {
                 "email": "josaeloliveira@gmail.com",
                 "name": "Admin",
-                "password": "$2b$12$tGstQqBJViHdCvHH5EEHfOQz6ApDNcUETv5LYNLVDNR6bwJgWk4k6",
+                "password": "$2b$12$o2D/7DVmuO7psZ5zCpaqDeeGnCD5eJGuT0qWA1x2so8qvynF8.Kom",
                 "expiry_days": 100000000
             },
             "Iasmin": {
                 "email": "iasmings@gmail.com",
                 "name": "Iasmin",
-                "password": "$2b$12$qELZpbVWaPMDKtHj0R.u0.dNpAxfSTEtWqptFCobMFEUKTjle",
+                "password": "$2b$12$QjbisxRDK4jZD4Z/k7zv4u6jjSGMJzvp4GG2Qz0XUjK4S8ezz/RN2",
                 "expiry_days": 100000000
             }
         }
