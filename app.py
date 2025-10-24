@@ -84,10 +84,8 @@ st.json(usuarios)
 st.write("Tentando autenticação...")
 # === FIM DEBUG ===
 
-
 nome, auth_status, usuario = authenticator.login(
-    "🔐 Login da Central", "main"
-)
+    "Login da Central", location="main")
 
 # === DEBUG MODE ===
 st.write("Login retornado:")
