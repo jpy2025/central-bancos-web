@@ -77,8 +77,21 @@ authenticator = stauth.Authenticate(
     login_config["cookie"]["expiry_days"],
 )
 
+# === DEBUG MODE ===
+st.write("🧠 DEBUG MODE ATIVO")
+st.write("Usuários carregados:")
+st.json(usuarios)
+st.write("Tentando autenticação...")
+# === FIM DEBUG ===
+
+
 login_info = authenticator.login(location="main", fields={
                                  "Form name": "🔐 Login da Central"})
+
+# === DEBUG MODE ===
+st.write("Login info:", login_info)
+# === FIM DEBUG ===
+
 if login_info:
     nome = login_info.get("name")
     usuario = login_info.get("username")
